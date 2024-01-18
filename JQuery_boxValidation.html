@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(function() {
+            my_funtion_terms = function my_funtion_terms(status, str) {
+                if (status == 'NOTOK') {
+                    $("#terms1").css({
+                        "border-color": "red",
+                        "border-width": "2px",
+                        "border-style": "solid"
+                    })
+                } else {
+                    $("#terms1").css({
+                        "border-color": "orange",
+                        "border-width": "3px",
+                        "border-style": "solid"
+                    })
+                }
+                $("#msg_").html(str);
+            }
+            $("terms").change(function() {
+                var ckb_status = $("#terms").prop('checked');
+                if (ckb_status) {
+                    my_funtion_terms("OK"), "Thanks for Registration in our protal"
+                } else {
+                    my_funtion_terms("NOTOK"), "You must agree to terms & condition before registration"
+
+                }
+            });
+
+            $("#btn1").click(function(event) {
+                var ckb_status = $("#terms").prop('checked');
+                if (ckb_status) {
+                    my_funtion_terms("OK"), "Thanks for Registration in our protal"
+                } else {
+                    my_funtion_terms("NOTOK"), "You must agree to terms & condition before registration"
+
+                }
+
+            });
+
+
+
+
+        });
+    </script>
+    <style>
+        h2 {
+            color: blue;
+        }
+        
+        body {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <table>
+            <caption>
+                <h2>Registration form</h2>
+            </caption>
+            <tr>
+                <td>
+                    <label for="name">Enter your frist name</label>
+                    <input type="text" name="name1"><br><br>
+                </td>
+                <tr>
+                    <td>
+                        <label for="email">Enter your email</label>
+                        <input type="email" name="name2"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Enter your password</label>
+                        <input type="password" name="name3"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="form-group" id="terms1">
+                    <input type="checkbox" value="yes" name="terms1" id="terms">
+                    I Agree to <a href="#">Terms & condition</a>
+                   </span>
+                    </td>
+                    <td>
+                        <div id="msg_terms" name="msg_terms"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" id="btn1" class="btn1" value="Register">
+                    </td>
+                </tr>
+
+            </tr>
+        </table>
+    </center>
+
+</body>
+
+</html>

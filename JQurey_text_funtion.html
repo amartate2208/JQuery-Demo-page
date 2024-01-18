@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(function() {
+            var str = $("h2").text();
+            $("h1").html(str);
+
+            $("#btn2").click(function() {
+                $("#h12").text("IEC Pune")
+            })
+
+        });
+    </script>
+    <style>
+        h2 {
+            color: rgb(59, 177, 20);
+            margin: 10px;
+        }
+        
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Wel-come pune</h2>
+        <h1></h1>
+    </div>
+    <div>
+        <h2>text funtion to set the value</h2>
+        <button id="btn2">Check Button</button>
+        <h2 id="h12">Hello All</h2>
+        <h2 id="h12">Looking for the trainer center for online classes</h2>
+    </div>
+
+</body>
+
+</html>

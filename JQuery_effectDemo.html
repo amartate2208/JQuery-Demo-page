@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(function() {
+            //hide effect
+            $("#hideP").click(function() {
+                $("p").hide(5000);
+            });
+            //show effect
+            $("#showp").click(function() {
+                $("p").show(5000);
+            });
+            //both show and hide effect
+            $("#bothp").click(function() {
+                $("p").toggle(2000)
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <p>
+        <b>Hide info using all button hide,show,toggle</b><br><br> The three victories have propelled India to the top of <br> the standings and brushed aside concerns over how the <br> hosts would deal with the extra pressure that comes <br> with playing
+        in front of fervent fans. <br> Two-time World Cup winning captain Ricky Ponting <br> has pointed to skipper Rohit Sharma as the key <br> to India rising to the occasion even while <br> surrounded by passionate home support. </p>
+
+    <br><br>
+    <button id="hideP">hide info</button>
+    <button id="showp">show info</button>
+    <button id="bothp">hide & show</button>
+
+</body>
+
+</html>

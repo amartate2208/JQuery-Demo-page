@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(function() {
+            function displaySelectValue() {
+                var str1 = $("#direction").val();
+                $("#h23").html("your selected direction is : " + str1);
+            }
+            $("select").change(displaySelectValue);
+            displaySelectValue();
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <h2>please select dirction from the below option</h2>
+        <select id="direction">
+            <option value="select">-Select direction-</option>
+            <option value="East">East</option>
+            <option value="West">West</option>
+            <option value="North">North</option>
+            <option value="South">South</option>
+        </select><br><br>
+        <h1 id="h23"></h1>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(function() {
+            //hide effect
+            $("#btn1").click(function() {
+                $("#img1").fadeIn(1000);
+                $("#img2").fadeIn(2000);
+                $("#img3").fadeIn(3000);
+                $("#img4").fadeIn(4000);
+            });
+            $("#btn2").click(function() {
+                $("#img1").fadeOut(4000);
+                $("#img2").fadeOut(3000);
+                $("#img3").fadeOut(2000);
+                $("#img4").fadeOut(1000);
+            });
+            $("#btn3").click(function() {
+                $("#img1").fadeToggle(4000);
+                $("#img2").fadeToggle(3000);
+                $("#img3").fadeToggle(2000);
+                $("#img4").fadeToggle(1000);
+            });
+            // $("#btn4").click(function() {
+            //     $("#imgmain").fadeToggle(1000);
+
+            // });
+            $("#btn5").click(function() {
+                $("#img5").fadeTo(1000, 0.4);
+                $("#img6").fadeTo(2000, 0.5);
+                $("#img7").fadeTo(3000, 0.8);
+                $("#img8").fadeTo(4000, 0.9);
+            });
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <h1>FadeIn FadeOut and FadeToggle Demo</h1>
+    <button id="btn1">fadeIn effect</button>
+    <button id="btn2">fadeOut effect</button>
+    <!-- <button id="btn4">fadeOut effect</button> -->
+    <button id="btn3">fadeToggle effect</button>
+    <button id="btn5">fadeOut effect</button><br><br>
+    <img src="amar pic.png" alt="" id="img1" style="width: 200px; height: 200px;display: none;"><br><br>
+    <img src="amar pic.png" alt="" id="img2" style="width: 200px; height: 200px;display: none;"><br><br>
+    <img src="amar pic.png" alt="" id="img3" style="width: 200px; height: 200px;display: none;"><br><br>
+    <img src="amar pic.png" alt="" id="img4" style="width: 200px; height: 200px;display: none;"><br><br>
+    <!-- <div id="imgmain">
+        <img src="amar pic.png" alt="" id="img1" style="width: 200px; height: 200px;display: none;"><br><br>
+        <img src="amar pic.png" alt="" id="img2" style="width: 200px; height: 200px;display: none;"><br><br>
+        <img src="amar pic.png" alt="" id="img3" style="width: 200px; height: 200px;display: none;"><br><br>
+        <img src="amar pic.png" alt="" id="img4" style="width: 200px; height: 200px;display: none;"><br><br>
+    </div> -->
+
+
+    <img src="amar pic.png" alt="" id="img5" style="width: 200px; height: 200px;"><br><br>
+    <img src="amar pic.png" alt="" id="img6" style="width: 200px; height: 200px;"><br><br>
+    <img src="amar pic.png" alt="" id="img7" style="width: 200px; height: 200px;"><br><br>
+    <img src="amar pic.png" alt="" id="img8" style="width: 200px; height: 200px;display: none;"><br><br>
+
+
+</body>
+
+</html>

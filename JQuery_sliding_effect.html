@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding effect</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(function() {
+            // $("#showdata").click(function() {
+            //     $("#showpanel, #showClass").slideDown(1000);
+            // });
+            // $("#showClass").click(function() {
+            //     $("#showpanel, #showClass").slideUp(1000);
+            // });
+            $("#showdata").click(function() {
+                $("#showpanel").slideToggle(1000);
+            });
+        });
+    </script>
+    <style>
+        #showpanel {
+            display: none;
+            background-color: black;
+            color: white;
+        }
+        
+        #showClass {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Sliding Effect(slideUp slideDown and slideToggle)</h1>
+    </center>
+    <div id="showdata">
+        <center>
+            <h3>Courses offered by IEC,Pune</h3>
+        </center>
+    </div>
+    <div id="showpanel">
+        <center>
+            <p>java</p>
+            <p>python</p>
+            <p>Sql</p>
+            <p>Web development</p>
+            <p>javaScript</p>
+            <p>Bootstrap</p>
+        </center>
+    </div>
+    <div id="showClass">
+        <center>
+            <h4>Up</h4>
+        </center>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Effect Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(function() {
+            // $("button").click(function() {
+            //     $("div").animate({
+            //         left: "450px",
+            //         height: "600px",
+            //         width: "600px",
+
+
+            //     }, 5000);
+            // });
+
+            $("#btnani").click(function() {
+                $("#btnaa").animate({
+                    left: "450px",
+                    height: "600px",
+                    width: "600px",
+
+
+                }, 5000);
+            });
+
+            $("#imageDisplay").click(function() {
+                $("img").animate({
+                    height: 'toggle',
+                    display: 'block'
+
+
+
+                });
+            });
+
+            var state = true;
+            $("#btn3").click(function() {
+                if (state) {
+                    $("#div2").animate({
+                        backgroundColor: "red",
+                        color: "white",
+                        width: "600px"
+                    }, 2000);
+
+                } else {
+                    $("#div2").animate({
+                        backgroundColor: "#fff",
+                        color: "#000",
+                        width: "250px"
+                    }, 2000);
+
+                }
+                state = !state;
+            });
+
+
+        });
+    </script>
+    <style>
+        .div1 {
+            width: 450px;
+            height: 450px;
+            position: relative;
+        }
+        
+        #btn3 {
+            text-decoration: none;
+        }
+        
+        #div2 {
+            width: 225px;
+            height: 300px;
+            position: relative;
+            background-color: bisque;
+        }
+        
+        #div2 h2 {
+            margin: 0;
+            padding: 0.4em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Animation Effect Check it</h1>
+    <button id="btnani">Start Animation</button>
+    <br><br>
+    <div id="btnaa" style="background-color: antiquewhite; height: 50px; width: 50px; position: absolute;">
+        <!-- <img src="amar pic.png" alt=""> -->
+
+    </div>
+    <br><br><br><br>
+    <button id="imaheDisplay">Start animation</button><br><br>
+    <div id="imageBlock">
+        <img src="amar pic.png" style="width: 300px; height: 300px; display: none;" alt="">
+    </div><br><br>
+
+    <div id="div1">
+        <div id="div2" class="div22">
+            <h2>Wel-Come to IEC, Pune</h2>
+            <p>
+                <h3>Courses Offered</h3>
+            </p>
+            <p>java</p>
+            <p>python</p>
+            <p>html</p>
+            <p>css</p>
+        </div>
+    </div>
+    <br><br>
+    <button id="btn3" class="btn33">Toggle Button</button>
+
+</body>
+
+</html>
